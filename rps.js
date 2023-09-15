@@ -82,5 +82,6 @@ const rock_paper_scissors = () => {
 
 }
 
-
-rock_paper_scissors()
+module.exports = {
+    rock_paper_scissors
+}

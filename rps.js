@@ -50,7 +50,7 @@ const rock_paper_scissors = () => {
                 console.log(c.yellow("Tie"))
             } else {
                 console.log("That is not Rock, Paper or Scissors try again")
-                return rock_paper_scissors()
+                return rock_paper_scissors() // have to add return for code to repeat correctly
             }
 
             games++

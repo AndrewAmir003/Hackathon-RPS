@@ -45,9 +45,12 @@ const rock_paper_scissors = () => {
             } else if (choice === "P" && cChoice === "R") {
                 w++
                 console.log(c.green("You win"))
-            } else {
+            } else if (choice === "P" && cChoice === "P"){
                 t++
                 console.log(c.yellow("Tie"))
+            } else {
+                console.log("That is not Rock, Paper or Scissors try again")
+                return rock_paper_scissors()
             }
 
             games++
@@ -59,9 +62,9 @@ const rock_paper_scissors = () => {
 
             if (see === 'y') {
                 console.log(`Win: ${w}, Lose: ${l}, Tie: ${t}`)
-                rock_paper_scissors()
+                return rock_paper_scissors()
             } else if (see === 'n') {
-                rock_paper_scissors()
+                return rock_paper_scissors()
             }
             
         } else if (play === 'n') {

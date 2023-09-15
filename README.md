@@ -1,6 +1,6 @@
 # Hackathon-RPS
 
-run node rps.js in terminal 
+run node index.js in terminal 
 starts a game of rock-paper-scissors, best of 3.
 for each game , reply with R, P or S for your choice
 at the end the game will ask if you want to play again
